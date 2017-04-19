@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统框架页面css文件
+ *	开发时间：2017/04/19
+ * 	开发人员：344822559@qq.com
+ * 	页面样式标识符：_zm
+ * */
+
+
+#header_zm{
+	height: 60px;
+	padding-left: 180px;
+	padding-right: 200px;
+	background: url(../../img/layout/header_bj.jpg) repeat-x top;
+	position: relative;
+}
+#header_zm a{
+	display:block;
+	width: 180px;
+	height:60px;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+
+#header_zm .guild_zm{
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	right: 0px;
+	top: 0px;
+	background: red;
+}
+
+
+#main_zm{
+	width: 100%;
+	background: green;
+}
