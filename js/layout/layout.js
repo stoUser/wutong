@@ -9,9 +9,9 @@
 $(function(){
 	
 	/*窗口内容高度自适应*/
-	$('#main_zm').height($(window).height()-60+'px');
+	$('.main_zm').height($(window).height()-60+'px');
 	$(window).resize(function(){
-		$('#main_zm').height($(window).height()-60+'px');
+		$('.main_zm').height($(window).height()-60+'px');
 	})
 
 	

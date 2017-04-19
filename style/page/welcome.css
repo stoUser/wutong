@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统默认欢迎页面css文件
+ *	开发时间：2017/04/19
+ * 	开发人员：344822559@qq.com
+ * 	页面样式标识符：_zm
+ * */
+
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url(../../img/layout/wel_bj.jpg) repeat-x bottom;
+}
+.wel_box_zm{
+	height: 100%;
+	background: url(../../img/layout/build_bj.png) repeat-x bottom;
+	position: relative;
+}
+.wel_box_zm .box_content_zm{
+	height: 500px;
+	width: 940px;
+	position: absolute;
+	margin-top: -250px;
+	top: 50%;
+	left: 50%;
+	margin-left: -450px;
+}
+.wel_box_zm .box_content_zm .news_box_zm{
+	width: 910px;
+	padding-left: 28px;
+	height: 40px;
+	border: 1px solid #f6eadb;
+	background: #fff8ef url(../../img/icon_horn.png) no-repeat 10px center;
+}
+.wel_box_zm .box_content_zm .news_box_zm a{
+	line-height: 40px;
+	display: block;
+	height: 40px;
+	overflow: hidden;
+}
+.wel_box_zm .box_content_zm .news_box_zm a span{
+	display: block;
+	float: left;
+	width: 60%;
+	height: 40px;
+	overflow: hidden;
+}
+.wel_box_zm .box_content_zm .news_box_zm a i{
+	float: right;
+	color: #999;
+	font-style: normal;
+}
+.wel_box_zm .box_content_zm .news_box_zm a:last-child i{
+	margin-right: 10px;
+}
+
+.wel_box_zm .box_content_zm .menu_box_zm{
+	height: 430px;
+}
+.wel_box_zm .box_content_zm .menu_box_zm a{
+	margin: 20px 20px 0px 0px;
+	width: 300px;
+	height: 175px;
+	display: block;
+	float: left;
+}
+.wel_box_zm .box_content_zm .menu_box_zm a:nth-child(3n){
+	margin-right: 0px;
+}
