@@ -21,6 +21,16 @@ body{
 	background: url(../../img/layout/build_bj.png) repeat-x bottom;
 	position: relative;
 }
+
+.wel_box_zm .wel_help_zm{
+	position: absolute;
+	display: block;
+	right: 20px;
+	top: 20px;
+	background: url(../../img/icon/icon_help.png) no-repeat center;
+	width: 18px;
+	height: 18px;
+}
 .wel_box_zm .box_content_zm{
 	height: 500px;
 	width: 940px;

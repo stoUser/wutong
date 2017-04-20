@@ -20,12 +20,12 @@
         	描述：本框架默认最小视图宽度为800px
         -->
 		<div id="header_zm">
-			<a href="#./"><img title="申通快递.梧桐系统" src="img/layout/logo.jpg" /></a>
+			<a href="./"><img title="申通快递.梧桐系统" src="img/layout/logo.jpg" /></a>
 			<div class="tab_box_zm">
 				<ul>
-					<li class="active">首页</li>
-					<li><span>网点查询</span><i></i></li>
-					<li><span>客户服务</span><i></i></li>
+					<li class="active" data-src="welcome.html" tag="home">首页</li>
+					<!--<li><span>网点查询</span><i></i></li>
+					<li><span>客户服务</span><i></i></li>-->
 				</ul>
 			</div>
 			<div class="guild_zm">
@@ -41,14 +41,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="main_zm">
-			<iframe id="main_zm" scrolling="yes" frameborder="0" src="welcome.html"></iframe>
+		<div class="main_zm main_zm_block" tag="home">
+			<iframe scrolling="yes" frameborder="0" src="welcome.html"></iframe>
 		</div>
-		
-		
-		
-		
-		
 		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
 		<script type="text/javascript" src="js/layout/layout.js"></script>
 		<script type="text/javascript" src="lib/layerui/layui.js"></script>

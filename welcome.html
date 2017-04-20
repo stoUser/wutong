@@ -17,7 +17,7 @@
 	<body>
 		
 		<div class="wel_box_zm">
-			
+			<a href="#" title="这里可以链接到帮助中心" class="wel_help_zm"></a>
 			<div class="box_content_zm">
 				<div class="news_box_zm">
 					<div class="row cl">
@@ -28,27 +28,27 @@
 				</div>
 				
 				<div class="menu_box_zm">
-					<a class="bg_paleBlue" title="总部业务" href="javascript:;">
+					<a class="bg_paleBlue" title="总部业务" onclick="addTopTab('http://www.baidu.com','总部业务','company')" href="javascript:;">
 						<img src="img/icon/icon_company.png" />
 						<p>总部业务</p>
 					</a>
-					<a class="bg_lilac" title="财务系统" href="javascript:;">
+					<a class="bg_lilac" title="财务系统" onclick="addTopTab('money.html','财务系统','money')" href="javascript:;">
 						<img src="img/icon/icon_money.png" />
 						<p>财务系统</p>
 					</a>
-					<a class="bg_orange">
+					<a class="bg_orange" title="运输管理" onclick="addTopTab('car.html','运输管理','car')" href="javascript:;">
 						<img src="img/icon/icon_car.png" />
 						<p>运输管理</p>
 					</a>
-					<a class="bg_pink">
+					<a class="bg_pink" title="物料管理" onclick="addTopTab('box.html','物料管理','box')" href="javascript:;">
 						<img src="img/icon/icon_box.png" />
 						<p>物料管理</p>
 					</a>
-					<a class="bg_green">
+					<a class="bg_green" title="站点业务" onclick="addTopTab('web.html','站点业务','web')" href="javascript:;">
 						<img src="img/icon/icon_website.png" />
 						<p>站点业务</p>
 					</a>
-					<a class="bg_moran">
+					<a class="bg_moran" title="OA协同" onclick="addTopTab('oa.html','OA协同','oa')" href="javascript:;">
 						<img src="img/icon/icon_watch.png" />
 						<p>OA协同</p>
 					</a>
@@ -59,12 +59,9 @@
 			
 			
 		</div>
-		
-		
-		
-		
-		
+				
 		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
 		<script type="text/javascript" src="lib/layerui/layui.js"></script>
+		<script type="text/javascript" src="js/layout/welcome.js" ></script>
 	</body>
 </html>
