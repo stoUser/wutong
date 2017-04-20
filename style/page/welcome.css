@@ -46,14 +46,16 @@ body{
 .wel_box_zm .box_content_zm .news_box_zm a span{
 	display: block;
 	float: left;
-	width: 60%;
+	width: 70%;
 	height: 40px;
 	overflow: hidden;
 }
 .wel_box_zm .box_content_zm .news_box_zm a i{
 	float: right;
 	color: #999;
+	font-size: 12px;
 	font-style: normal;
+	font-family: arial,"arial black","arial, helvetica, sans-serif";
 }
 .wel_box_zm .box_content_zm .news_box_zm a:last-child i{
 	margin-right: 10px;
@@ -69,6 +71,23 @@ body{
 	display: block;
 	float: left;
 }
+.wel_box_zm .box_content_zm .menu_box_zm a:hover{
+	text-decoration: none;
+	background: #666462;
+}
+.wel_box_zm .box_content_zm .menu_box_zm a img{
+	height: 45px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+.wel_box_zm .box_content_zm .menu_box_zm a p{
+	font-size: 18px;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+}
+
 .wel_box_zm .box_content_zm .menu_box_zm a:nth-child(3n){
 	margin-right: 0px;
 }
