@@ -15,28 +15,34 @@ $(function(){
 	})
 
 	/*顶部tab标签切换*/
-	$('body').on('click','#header_zm .tab_box_zm ul li',function(){
+	$('body').on('click','#header_zm .tab_box_zm ul li',function(event){
 		$(this).addClass('active').siblings().removeClass('active');
 		var tag=$(this).attr('tag');
-		$('.main_zm').eq($(this).index()).addClass('main_zm_block').siblings('.main_zm').removeClass('main_zm_block');	
+		$('.main_zm').eq($(this).index()).addClass('main_zm_block').siblings('.main_zm').removeClass('main_zm_block');
+		event.stopPropagation(); 
 	})
 
 	/*关闭顶部tab标签*/
-	$('body').on('click','#header_zm .tab_box_zm ul li i',function(){
+	$('body').on('click','#header_zm .tab_box_zm ul li i',function(event){
 		
+		/*
+		 * 其实只需要判断当前点击的这个tab的li标签是否有active 就可以知道外面是否还有active标签
+		 * 如果hasActive是true 那说明剩余就没有active的li标签了
+		 * */
+		var hasActive=$(this).parent('li').hasClass('active');
 		var Tabli=$(this).parent('li').index();
 		$('.main_zm').eq(Tabli).remove();
 		$(this).parent('li').remove();
-	
-		/*判断删除当前标签之后是否有选中的tab标签，如果没有就选择最后一个标签设置选中状态*/
-		var TabActive=$('#header_zm .tab_box_zm ul li.active').length;
-		if(TabActive==0){
+		
+		if(hasActive){
 			$('#header_zm .tab_box_zm ul li:last').addClass('active').find('i').addClass('active');
 			$('.main_zm:last').addClass('main_zm_block').siblings('.main_zm').removeClass('main_zm_block');
 		}else{
-			$('.main_zm').eq($('#header_zm .tab_box_zm ul li.active').index()).addClass('main_zm_block').siblings('.main_zm').removeClass('main_zm_block');
+			$('.main_zm').siblings().removeClass('main_zm_block');
+			var divTag=$('#header_zm .tab_box_zm ul li[class="active"]').attr('tag');
+			$(".main_zm[tag='"+divTag+"']").addClass('main_zm_block');
 		}
-
+		event.stopPropagation(); 
 	})
 	
 })
