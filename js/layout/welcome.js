@@ -4,12 +4,6 @@
  * 	开发人员：344822559@qq.com
  * */
 
-/*框架页顶部tab切换*/
-$(function(){
-	
-
-	
-})
 
 /*点击默认页系统板块给框架页面添加tab标签*/
 function addTopTab(url,title,tag){
