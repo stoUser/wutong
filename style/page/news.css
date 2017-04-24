@@ -44,6 +44,11 @@ body{
 	height: 560px;
 	padding: 20px;
 }
+.newList_zm .new_show{
+	overflow: auto;
+	height: 600px;
+}
+
 .newList_zm .new_content ul{
 	display: block;
 	/*height: 495px;*/

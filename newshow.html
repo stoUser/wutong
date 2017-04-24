@@ -1,3 +1,4 @@
+
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -13,6 +14,7 @@
 		<![endif]-->
 		<link rel="stylesheet" href="style/common/common.css" />
 		<link rel="stylesheet" href="style/page/news.css" />
+		<link rel="stylesheet" type="text/css" href="lib/scroll/style/jquery.jscrollpane.css" media="all"/>
 	</head>
 	<body>
 		
@@ -22,13 +24,50 @@
 					帮助中心
 					<a href="newlist.html" class="btn btn-warning radius size-M f-r mt-10 mr-10">返回</a>
 				</div>
-				<div class="new_content">
-					
+				<div class="new_content new_show">
+					<p class="f-18 text-c">申通快递帮弱助贫一申通快递专项基金成立仪式举行</p>
+					<div class="container-fluid f-14 c-666 lh-28">
+						扶危济困，帮弱助贫。4月12日，申通快递专项基金成立仪式在公司本部举行。青浦区民政局纪委书记、区慈善分会副会长兼秘书长苏建明，重固镇党委副书记、镇长金彪，申通快递副总裁邹建生，申通快递党委常务副书记、工会主席李永顺等领导出席了基金成立仪式。
+      仪式现场，申通快递有限公司与上海市慈善基金会青浦区分会举行了签约仪式，申通公司向区慈善分会捐款100万元，成立申通快递专项基金，用于开展安老、扶幼、助学、济困及其他各项慈善公益活动。青浦区民政局纪委书记、区慈善分会副会长兼秘书长苏建明为申通快递专项基金授牌，公司副总裁邹建生接牌。
+      成立仪式上，青浦区民政局纪委书记、区慈善分会副会长兼秘书长苏建明对申通快递的善举给予高度评价。苏建明说，申通快递作为中国快递行业的领军企业，一直积极参与社会公益活动，发扬企业大爱精神，为上海市、青浦区慈善事业作出了积极贡献，为青浦区、重固镇弱势群体提供了有效帮助，“申通专项基金”的成立更是一项极具社会意义与功德的善举。
+      苏建明表示，将完善专项基金的监督和管理机制，认真管好这支慈善基金，用好每一笔善款，确保满足捐赠人的意愿。区慈善分会还将与申通快递一起设立专门的基金管理委员会，加强使用反馈、跟踪和检查，接受社会监督，确保资金安全，确保专款专用，切实用于各项慈善公益活动。
+      重固镇党委副书记、镇长金彪对申通快递的党建、工会工作给予充分肯定，对申通快递为重固社会经济发展方面所做的贡献表示感谢。他希望公司，严格按照相关法律法规要求，合法合规运作专项基金，贴近基层实际，切实服务民生，把资金用在刀口上、用到老百姓最需要的地方去。
+      “感谢青浦区、重固镇给我们这样一个好的平台，让我们可以更好的投身慈善事业，更好的回馈社会。”申通快递副总裁邹建生表示，作为一家成立20多年的企业，申通快递一直将履行社会责任作为企业核心战略之一，把“做一家受人尊重的企业，做一家有社会责任感的企业”当作自己的崇高使命。2017年，正值申通快递上市之后的开局之年，为了能加快公益步伐，规范化、精准化企业捐赠行为，让每一份爱心切实落实到真正需要的群体身上，申通快递决定与上海市慈善基金会青浦区分会携手，成立申通快递专项基金。
+      邹建生强调，申通快递专项基金成立后，将继续深化与青浦区、重固镇的合作，持续开展系列公益慈善活动，发挥公司30万名员工和2亿多客户的传播优势，积极宣传慈善，搭建爱心人士奉献爱心的公益平台，帮助真正需要帮助的人，为社会慈善事业发展做出新的更大的贡献。
+      据了解，在企业不断发展壮大的过程中，申通快递积极践行企业公民职责，多方面承担社会责任，开展了小红心暖阳助学、一对一帮扶、关爱留守儿童、为贫困山区儿童免费运送爱心物资、捐款4000万设立教育教学奖励基金等多项社会公益活动，荣获了“慈善之星”、“上海市快递业发展贡献突出企业”、“上海市五一劳动奖状”等多项殊荣，赢得了业界口碑，传播了行业正能量。
+					</div>
 				</div>
-				
 			</div>
 		</div>	
-		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+		<!--<script type="text/javascript" src="lib/jquery/jquery.js"></script>-->
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/layerui/layui.js"></script>
+		<script type="text/javascript" src="lib/scroll/script/mwheelIntent.js"></script>
+		<script type="text/javascript" src="lib/scroll/script/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript">
+		$(function()
+		{
+		
+			var bars = '.jspHorizontalBar, .jspVerticalBar';
+		
+			$('.new_show').bind('jsp-initialised', function (event, isScrollable) {
+				
+				//hide the scroll bar on first load
+				$(this).find(bars).hide();
+			
+			}).jScrollPane().hover(
+			
+				//hide show scrollbar
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 0.9);
+				},
+				function () {
+					$(this).find(bars).stop().fadeTo('fast', 0);
+				}
+
+			);				
+
+		});
+		</script>
 	</body>
 </html>
