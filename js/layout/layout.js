@@ -24,7 +24,6 @@ $(function(){
 
 	/*关闭顶部tab标签*/
 	$('body').on('click','#header_zm .tab_box_zm ul li i',function(event){
-		
 		/*
 		 * 其实只需要判断当前点击的这个tab的li标签是否有active 就可以知道外面是否还有active标签
 		 * 如果hasActive是true 那说明剩余就没有active的li标签了
@@ -42,6 +41,22 @@ $(function(){
 			var divTag=$('#header_zm .tab_box_zm ul li[class="active"]').attr('tag');
 			$(".main_zm[tag='"+divTag+"']").addClass('main_zm_block');
 		}
+		event.stopPropagation(); 
+	})
+	
+	/*会员名点击下拉*/
+	$('.guild_zm .memberName_zm').on('click',function(event){
+		$('.guild_zm').find('.member_down').toggle();
+		event.stopPropagation(); 
+	})
+	
+	$(document).on('click',function(event){
+		$('.guild_zm').find('.member_down').hide();
+		event.stopPropagation(); 
+	})
+	
+	$(document).on('click',function(event){
+		$('.guild_zm').find('.member_down').hide();
 		event.stopPropagation(); 
 	})
 	

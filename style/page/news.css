@@ -1,0 +1,76 @@
+@charset "utf-8";
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统帮助中心css文件
+ *	开发时间：2017/04/24
+ * 	开发人员：344822559@qq.com
+ * 	页面样式标识符：_zm
+ * */
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url(../../img/layout/wel_bj.jpg) repeat-x bottom;
+}
+.wel_box_zm{
+	height: 100%;
+	width: 100%;
+	background: url(../../img/layout/build_bj.png) repeat-x bottom;
+	position: relative;
+}
+.newList_zm{
+	width: 940px;
+	height: 650px;
+	margin: 0 auto;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -470px;
+	margin-top: -325px;
+}
+.newList_zm .new_title{
+	height: 50px;
+	background: #ffeee7 url(../../img/icon/icon_help_title.png) no-repeat 15px center;
+	color: #f4743a;
+	padding-left: 40px;
+	font-size: 16px;
+	line-height: 50px;
+}
+.newList_zm .new_content{
+	width: 900px;
+	height: 560px;
+	padding: 20px;
+}
+.newList_zm .new_content ul{
+	display: block;
+	height: 495px;
+	overflow-y: hidden;
+	/*background: ghostwhite;*/
+}
+.newList_zm .new_content ul li{
+	float: left;
+	width: 435px;
+	line-height: 45px;
+	border-bottom: 1px dotted #eee;
+	position: relative;
+}
+.newList_zm .new_content ul li a{
+	display: block;
+	height: 45px;
+	width: 355px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.newList_zm .new_content ul li cite{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-family: arial;
+	color: #999;
+}
+.newList_zm .new_content ul li:nth-child(2n){
+	float: right;
+}

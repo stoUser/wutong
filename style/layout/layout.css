@@ -106,6 +106,50 @@ body{
 	float: left;
 }
 
+#header_zm .guild_zm .member_down{
+	width: 210px;
+	background: white;
+	box-shadow: 0px 2px 3px #e7e7e7;
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	z-index: 1000;
+	display: none;
+}
+
+#header_zm .guild_zm .member_down .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: -8px;
+}
+#header_zm .guild_zm .member_down ul{
+	display: block;
+	clear: both;
+}
+#header_zm .guild_zm .member_down ul li{
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+#header_zm .guild_zm .member_down ul li:last-child{
+	border-bottom: none;
+}
+#header_zm .guild_zm .member_down ul li div.net_code{
+	height: 35px;
+	background: url(../../img/icon/icon_code.png) no-repeat left center;
+	padding-left: 28px;
+}
+#header_zm .guild_zm .member_down ul li div.net_code p{
+	margin: 0px;
+	line-height: 18px;
+}
+
 .line_layer_top_line_zm{
 	color: #f69860;
 	margin-right: 0px;
