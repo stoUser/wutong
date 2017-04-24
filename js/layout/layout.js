@@ -60,4 +60,8 @@ $(function(){
 		event.stopPropagation(); 
 	})
 	
+	$('.guild_zm .member_down').on('click',function(event){
+		event.stopPropagation();
+	});
+	
 })

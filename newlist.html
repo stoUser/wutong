@@ -18,10 +18,13 @@
 		
 		<div class="wel_box_zm">
 			<div class="newList_zm radius box-shadow">
-				<div class="new_title">帮助中心</div>
+				<div class="new_title">
+					帮助中心
+					<a href="welcome.html" class="btn btn-warning radius size-M f-r mt-10 mr-10">返回</a>
+				</div>
 				<div class="new_content">
-					<ul>
-						<li>
+					<ul id="news">
+						<!--<li>
 							<a href="#">·申通快递帮弱助贫一申通快递专项基金成立仪式举行 </a>
 							<cite>2017/04/16</cite>
 						</li>
@@ -44,11 +47,9 @@
 						<li>
 							<a href="#">·申通快递帮弱助贫一申通快递专项基金成立仪式举行 </a>
 							<cite>2017/04/16</cite>
-						</li>
+						</li>-->
 					</ul>
-					<div id="page" class="text-c">
-						
-					</div>
+					<div id="page" class="text-c mt-10"></div>
 				</div>
 				
 			</div>
@@ -57,19 +58,77 @@
 		<script type="text/javascript" src="lib/layerui/layui.js"></script>
 		<script type="text/javascript" src="js/layout/welcome.js" ></script>
 		<script type="text/javascript">
+			
 			layui.use(['laypage', 'layer'], function(){
 			  var laypage = layui.laypage
 			  ,layer = layui.layer;
 			  
+			  	
+			  	/*测试数据*/
+				var data = [
+			    '申通快递帮弱助贫一申通快递专项基金成立仪式举行',
+			    '扶危济困　帮弱助贫一申通快递专项基金成立仪式举行',
+			    '申通快递获得2016年度信息安全突出进步企业奖',
+			    '申通快递关于我国部分地区出现暴雪天气告客户书',
+			    '申通快递2017年春节期间服务保障工作公告',
+			    '关于华北地区严重雾霾天气影响快件时效的提示',
+			    '申通快递位列上海市青浦区纳税百强企业榜首',
+			    '宁夏',
+			    '成都',
+			    '西安',
+			    '南昌',
+			    '上饶',
+			    '沈阳',
+			    '济南',
+			    '厦门',
+			    '福州',
+			    '九江',
+			    '宜春',
+			    '赣州',
+			    '宁波',
+			    '绍兴',
+			    '无锡',
+			    '苏州',
+			    '徐州',
+			    '东莞',
+			    '佛山',
+			    '中山',
+			    '成都',
+			    '武汉',
+			    '青岛',
+			    '天津',
+			    '重庆',
+			    '南京',
+			    '九江',
+			    '香港',
+			    '澳门',
+			    '台北'
+			  ];
+			  
+			  var nums = 22; //每页出现的数据量
+			  
+			  //模拟渲染
+			  var render = function(curr){
+			    //此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+			    var str = '', last = curr*nums - 1;
+			    last = last >= data.length ? (data.length-1) : last;
+			    for(var i = (curr*nums - nums); i <= last; i++){
+			      str += '<li><a href="newshow.html">·'+ data[i] +'</a><cite>2017/04/16</cite></li>';
+			    }
+			    return str;
+			  };
+			  
+			  
 				laypage({
 				  cont: 'page', //容器。值支持id名、原生dom对象，jquery对象,
-				  pages: 11, //总页数
-				  first: false,
-				  last: false,
-				  skin: '#ed6900'
+				  pages: Math.ceil(data.length/nums), //总页数
+				  //first: false,
+				  //last: false,
+				  skin: '#ed6900',
+				  jump: function(obj){
+				      document.getElementById('news').innerHTML = render(obj.curr);
+				  }
 				});
-			  
-			  
 			})
 			
 		</script>

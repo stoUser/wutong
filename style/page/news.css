@@ -46,7 +46,7 @@ body{
 }
 .newList_zm .new_content ul{
 	display: block;
-	height: 495px;
+	/*height: 495px;*/
 	overflow-y: hidden;
 	/*background: ghostwhite;*/
 }
