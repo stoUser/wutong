@@ -19,6 +19,9 @@ $(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 		var tag=$(this).attr('tag');
 		$('.main_zm').eq($(this).index()).addClass('main_zm_block').siblings('.main_zm').removeClass('main_zm_block');
+		if(tag=='home'){
+			$('.main_zm').eq($(this).index()).find('iframe').attr('src','welcome.html');
+		}
 		event.stopPropagation(); 
 	})
 

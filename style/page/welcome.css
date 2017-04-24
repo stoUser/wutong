@@ -80,10 +80,15 @@ body{
 	height: 175px;
 	display: block;
 	float: left;
+	/*transition: transform 3s linear 20ms;*/
+	transition: background 0.5s linear 20ms;
+	-webkit-transition: background 0.5s linear 20ms;
+	-moz-transition: background 0.5s linear 20ms;
 }
 .wel_box_zm .box_content_zm .menu_box_zm a:hover{
 	text-decoration: none;
 	background: #666462;
+	/*transform: rotate(720deg);*/
 }
 .wel_box_zm .box_content_zm .menu_box_zm a img{
 	height: 45px;
