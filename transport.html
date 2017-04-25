@@ -11,6 +11,7 @@
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" href="lib/H-ui/css/H-ui.ie.css" />
 		<![endif]-->
+		<link rel="stylesheet" href="lib/font_icon/iconfont.css" />
 		<link rel="stylesheet" href="style/page/inner/inner-common.css" />
 		<link rel="stylesheet" href="style/page/inner/inner-layout.css" />
 	</head>
@@ -20,39 +21,249 @@
         	时间：2017-04-24
         	描述：系统内框架，以运输管理为例
         -->
-		<div class="main_left_b bg_shallow_black f-l">
-
-		</div>
+		<!--右侧内容区域-->
 		<div class="main_right_b f-r">
 			<div class="main_content_b">
-
-			</div>
-		</div>
-		<!--<div id="header_zm">
-			<a href="./"><img title="申通快递.梧桐系统" src="img/layout/logo.jpg" /></a>
-			<div class="tab_box_zm">
-				<ul>
-					<li class="active" data-src="welcome.html" tag="home">首页</li>
-				</ul>
-			</div>
-			<div class="guild_zm">
-				<div class="memberName_zm f-14">张名贵</div>
-				<div class="pipe line_layer_top_line_zm f-l">|</div>
-				<div class="set_box-zm">
-					<ul>
-						<li><img src="img/layout/icon_layout_message.png"/></li>
-						<li><img src="img/layout/icon_layout_small.png"/></li>
-						<li><img src="img/layout/icon_layout_max.png"/></li>
-						<li><img src="img/layout/icon_layout_close.png"/></li>
-					</ul>
+				<div class="content_tabs_b">
+					<div class="toolbar_b">
+						<div class="toolbar_down">常用工具<span class="caret"></span>
+						</div>
+						<ul class="toolbar_list">
+							<li><a href="javascript:void(0)"><i class="iconfont icon-chaxun"></i>快件查询</a></li>
+							<li><a href="javascript:void(0)"><i class="iconfont icon-chaxun"></i>订单查询</a></li>
+							<li><a href="javascript:void(0)"><i class="iconfont icon-chaxun"></i>网点查询</a></li>
+							<li class="divider"></li>
+							<li><a href="javascript:void(0)"><i class="iconfont icon-chaxun"></i>帮助中心</a></li>
+						</ul>
+					</div>
+					<div class="roll_left">
+						<i class="iconfont icon-fanhui"></i>
+					</div>
+					<div class="page_tabs_b">
+						<div class="page_tabs_content">
+							<a href="javascript:void(0)" tag="home" class="active">首页</a>
+						</div>
+					</div>
+					<div class="roll_right">
+						<i class="iconfont icon-fanhui-copy-copy"></i>
+					</div>
+				</div>
+				<div class="page_content show">
+					<iframe scrolling="yes" frameborder="0" src="https://www.baidu.com/"></iframe>
 				</div>
 			</div>
-		</div>
-		<div class="main_zm main_zm_block" tag="home">
-			<iframe scrolling="yes" frameborder="0" src="https://www.baidu.com/"></iframe>
-		</div>-->
+		</div><!--右侧内容结束-->
+
+		<!--左侧导航-->
+		<div class="main_left_b bg_shallow_black f-l">
+			<div id="menu_b">
+				<ul>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont icon-house"></i>
+							<span>扫描</span>
+						</a>
+						<div class="submenu_wrapper">
+							<div class="triangle_left"></div>
+							<div class="submenu">
+								<div class="submenu_wrapper_close">
+									<i class="iconfont icon-fanhui"></i>
+								</div>
+								<div class="submenu_ul">
+									<div class="submenu_li">
+										<a href="javascript:void(0)" tag="lanjian">收件员揽件</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)" tag="chengzhong">收件称重</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">发件</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">装袋发件</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">装袋发件</a>
+									</div>
+								</div>
+								<div class="nav_b" tag="lanjian">
+									<div class="nav_list">
+										<a href="javascript:void(0)">收件员揽件</a>
+									</div>
+									<div class="nav_list">
+										<a href="javascript:void(0)">收件称重</a>
+									</div>
+								</div>
+								<div class="nav_b" tag="chengzhong">
+									<div class="nav_list">
+										<a href="javascript:void(0)" onclick="addTabBar('http://www.baidu.com','总部业务','company')">收件员揽件111</a>
+									</div>
+									<div class="nav_list">
+										<a href="javascript:void(0)">收件称重</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<i class="iconfont icon-kehu"></i>
+							<span>扫描</span>
+						</a>
+						<div class="submenu_wrapper">
+							<div class="triangle_left"></div>
+							<div class="submenu">
+								<div class="submenu_wrapper_close">
+									<i class="iconfont icon-fanhui"></i>
+								</div>
+								<div class="submenu_ul">
+									<div class="submenu_li">
+										<a href="javascript:void(0)">01</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">02</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">03</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">04</a>
+									</div>
+									<div class="submenu_li">
+										<a href="javascript:void(0)">05</a>
+									</div>
+								</div>
+								<div class="nav_b">
+									<div class="nav_list">
+										<a href="javascript:void(0)">01-1</a>
+									</div>
+									<div class="nav_list">
+										<a href="javascript:void(0)">01-2</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!--左侧导航结束-->
+
 		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
-		<!--<script type="text/javascript" src="js/layout/layout.js"></script>-->
-		<script type="text/javascript" src="lib/layerui/layui.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			/*窗口内容高度自适应*/
+			$('.page_content').height($(window).height()-47+'px');
+			$(window).resize(function(){
+				$('.page_content').height($(window).height()-47+'px');
+			});
+
+
+
+			$('body').on('click', '#menu_b ul li',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+
+			$('body').on('click', '#menu_b .submenu_wrapper_close',function(event){
+				$(this).parents("li").removeClass('active');
+				event.stopPropagation();
+			});
+
+			$('body').on('click', '#menu_b .submenu a',function(event){
+				event.stopPropagation();
+			});
+
+			$('body').on('mouseover', '#menu_b .submenu_wrapper .submenu_li a',function(){
+				var tag1 = $(this).attr('tag');
+				$(this).parents(".submenu").find('.nav_b').hide().siblings('[tag =' +tag1+']').show();
+			});
+
+			$('.toolbar_b .toolbar_down').click(function(){
+				$('.toolbar_b .toolbar_list').slideToggle(200);
+			})
+
+			$('body').on('click', '.page_tabs_b .page_tabs_content a',function(){
+				var index = $(this).index();
+				$(this).addClass('active').siblings().removeClass('active');
+				$('.page_content').eq(index).addClass('show').siblings().removeClass('show');
+			});
+
+			$(".roll_left").on("click", i);
+			$(".roll_right").on("click", a);
+		});
+		function addTabBar(url,title,tag){
+
+			/*收回子菜单*/
+			subMenuHide();
+
+			/*添加之前去除兄弟模块的选中状态*/
+			$('.page_tabs_b .page_tabs_content a.active').removeClass('active');
+
+			/*根据tag标签判断这个标签是否存在，如果存在就设置成选中状态*/
+			var $tag = $(".page_tabs_b .page_tabs_content a[tag='"+tag+"']");
+			var isTag = $tag.length;
+
+			if(!isTag){
+
+				var Wh=$(window).height()-47;
+
+				/*给父级添加tab标签*/
+
+				var strTab = '<a href="javascript:void(0)" data-src='+url+' class="active" tag="'+tag+'">' + title + '<i class="iconfont icon-iconshanchu"></i></a>';
+				$(".page_tabs_b .page_tabs_content").append(strTab);
+
+				/*给父级框架注入iframe*/
+				var iframeDiv = '<div class="page_content show" tag="'+tag+'" style="height:'+Wh+'px"><iframe scrolling="yes" frameborder="0" src="'+url+'"></iframe></div>';
+				$('.page_content').removeClass('show');
+				$('.page_content:last').after(iframeDiv);
+
+			}else{
+				$tag.addClass('active').siblings('a').removeClass('active');
+				$('.page_content').eq($tag.index()).addClass('show').siblings().removeClass('show');
+			}
+		}
+
+		function subMenuHide(){
+			$('#menu_b ul li').removeClass('active');
+		}
+
+		function t(t) {
+			var e = 0;
+			return $(t).each(function () {
+				e += $(this).outerWidth(!0)
+			}), e
+		}
+
+		function a() {
+			var e = Math.abs(parseInt($(".page_tabs_content").css("margin-left"))),
+					a = t($(".page_tabs_b").children().not(".page_tabs_b")),
+					i = $(".page_tabs_b").outerWidth(!0) - a,
+					n = 0;
+			if ($(".page_tabs_content").width() < i) return !1;
+			for (var s = $(".page_tabs_content a:first"), r = 0; r + $(s).outerWidth(!0) <= e;) r += $(s).outerWidth(!0), s = $(s).next();
+
+			if (r = 0, t($(s).prevAll()) > i) {
+				for (; r + $(s).outerWidth(!0) < i && s.length > 0;) r += $(s).outerWidth(!0), s = $(s).prev();
+				n = t($(s).prevAll())
+			}
+			alert(n);
+			$(".page_tabs_content").animate({
+				marginLeft: 0 - n + "px"
+			}, "fast")
+		}
+
+		function i() {
+			var e = Math.abs(parseInt($(".page_tabs_content").css("margin-left"))),
+					a = t($(".page_tabs_b").children().not(".page_tabs_b")),
+					i = $(".page_tabs_b").outerWidth(!0) - a,
+					n = 0;
+			if ($(".page_tabs_content").width() < i) return !1;
+			for (var s = $(".page_tabs_content a:first"), r = 0; r + $(s).outerWidth(!0) <= e;) r += $(s).outerWidth(!0), s = $(s).next();
+			for (r = 0; r + $(s).outerWidth(!0) < i && s.length > 0;) r += $(s).outerWidth(!0), s = $(s).next();
+			n = t($(s).prevAll()), n > 0 && $(".page_tabs_content").animate({
+				marginLeft: 0 - n + "px"
+			}, "fast")
+		}
+	</script>
 	</body>
 </html>
