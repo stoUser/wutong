@@ -37,6 +37,7 @@ body{
 	margin-right: auto;
 	height: 100%;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 /*右侧内容区域*/
 .content_tabs_b{
@@ -139,6 +140,8 @@ body{
 	box-sizing: border-box;
 	border-right: 1px solid #ededed;
 	cursor: pointer;
+	background: #ffffff;
+	color: #999999;
 }
 
 .roll_right{
@@ -152,6 +155,8 @@ body{
 	box-sizing: border-box;
 	border-left: 1px solid #ededed;
 	cursor: pointer;
+	background: #ffffff;
+	color: #999999;
 }
 
 
@@ -289,7 +294,12 @@ body{
 	box-sizing: border-box;
 	-webkit-box-shadow:3px 0 3px rgba(0, 0, 0, .2);
 	-moz-box-shadow:3px 0 3px rgba(0, 0, 0, .2);
-	box-shadow:3px 0 3px rgba(0, 0, 0, .2);
+	box-shadow:3px 0 4px rgba(0, 0, 0, .1);
+}
+
+#menu_b ul li .submenu_wrapper .submenu_wrapper_close:hover{
+	cursor: pointer;
+	background: #eeeeee;
 }
 
 #menu_b ul li .submenu .submenu_ul{

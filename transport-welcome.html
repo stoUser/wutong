@@ -1,0 +1,271 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<title>申通快递.梧桐</title>
+		<link rel="stylesheet" href="lib/layerui/css/layui.css">
+		<link rel="stylesheet" href="lib/H-ui/css/H-ui.min.css" />
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="lib/H-ui/css/H-ui.ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="lib/font_icon/iconfont.css" />
+		<link rel="stylesheet" href="style/page/inner/inner-common.css" />
+		<link rel="stylesheet" href="style/page/inner/transport-welcome.css" />
+	</head>
+	<body>
+		<!--
+        	作者：398146685@qq.com
+        	时间：2017-04-26
+        	描述：系统内框架，以运输管理为例欢迎页面
+        -->
+		<div class="main_b">
+			<div class="ibox">
+				<div class="ibox_system">
+					<div class="system_title clearfix">
+						<div class="system_logo f-l">
+							<img src="img/page/vms-logo.png" />
+						</div>
+						<div class="system_name f-l ml-15">
+							<h2 class="f_orange pt-10">运输管理系统</h2>
+							<h4>上海申通-周军业</h4>
+						</div>
+						<div class="system_other system_code f-r">
+							<ul class="clearfix">
+								<li>
+									<img src="img/page/IOS.png" width="80" height="80" />
+									<p class="text-c f_shallow_black">IOS</p>
+								</li>
+								<li>
+									<img src="img/page/Andriod.png" width="80" height="80" />
+									<p class="text-c f_shallow_black">Andriod</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="ibox_important_info">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-4">
+							<span>今日收件量</span><h3 class="f_orange timer count-number" data-to="2648123" data-speed="1500"></h3><span>件</span>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<span>今日收件量</span><h3 class="f_orange timer count-number" data-to="987123" data-speed="1500"></h3><span>件</span>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<span>今日收件量</span><h3 class="f_orange timer count-number" data-to="845123" data-speed="1500"></h3><span>件</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ibox mt-20">
+				<div class="ibox_tab">
+					<ul class="clearfix">
+						<li class="active"><a href="javascript:void(0)">基础信息</a></li>
+						<li><a href="javascript:void(0)">货量对比</a></li>
+						<li><a href="javascript:void(0)">异常情况对比</a></li>
+						<li><a href="javascript:void(0)">业务支持</a></li>
+						<li><a href="javascript:void(0)">系统更新通知</a></li>
+						<li><a href="javascript:void(0)">IT技术支持</a></li>
+					</ul>
+				</div>
+				<div class="ibox_tab_content show hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" id="main_one" style="height: 400px">
+
+						</div>
+						<div class="col-xs-12 col-sm-6" id="main_two" style="height: 400px"></div>
+					</div>
+				</div>
+				<div class="ibox_tab_content hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" style="height: 400px">
+							1
+						</div>
+						<div class="col-xs-12 col-sm-6" style="height: 400px">
+							2
+						</div>
+					</div>
+				</div>
+				<div class="ibox_tab_content hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" id="main_one" style="height: 400px">
+
+						</div>
+						<div class="col-xs-12 col-sm-6" id="main_two" style="height: 400px"></div>
+					</div>
+				</div>
+				<div class="ibox_tab_content hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" id="main_one" style="height: 400px">
+
+						</div>
+						<div class="col-xs-12 col-sm-6" id="main_two" style="height: 400px"></div>
+					</div>
+				</div>
+				<div class="ibox_tab_content hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" id="main_one" style="height: 400px">
+
+						</div>
+						<div class="col-xs-12 col-sm-6" id="main_two" style="height: 400px"></div>
+					</div>
+				</div>
+				<div class="ibox_tab_content hui-fadeinR">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6" id="main_one" style="height: 400px">
+
+						</div>
+						<div class="col-xs-12 col-sm-6" id="main_two" style="height: 400px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+		<script type="text/javascript" src="lib/countScroll/countScroll.js"></script>
+		<script type="text/javascript" src="lib/echarts/echarts.js"></script>
+		<script type="text/javascript" src="lib/echarts/theme/orange.js"></script>
+		<script type="text/javascript">
+			/*ibox_tab切换*/
+			$(function(){
+				$('body').on('click','.ibox_tab li',function(){
+					var index = $(this).index();
+					$(this).addClass('active').siblings('li').removeClass('active');
+					$(this).parents('.ibox').find('.ibox_tab_content').eq(index).addClass('show').siblings().removeClass('show');
+				})
+			});
+
+
+
+
+			// 基于准备好的dom，初始化echarts实例
+			var myChart_one = echarts.init(document.getElementById('main_one'),'orange');
+
+			// 指定图表的配置项和数据
+			var option_one = {
+				title : {
+					text: '某站点用户访问来源',
+					x:'center',
+					y:'bottom'
+				},
+				tooltip : {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+					orient: 'vertical',
+					left: 'left',
+					data: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+				},
+				series : [
+					{
+						name: '访问来源',
+						type: 'pie',
+						radius : '55%',
+						center: ['50%', '40%'],
+						data:[
+							{value:1335, name:'直接访问'},
+							{value:310, name:'邮件营销'},
+							{value:234, name:'联盟广告'},
+							{value:135, name:'视频广告'},
+							{value:248, name:'搜索引擎'}
+						],
+						itemStyle: {
+							emphasis: {
+								shadowBlur: 10,
+								shadowOffsetX: 0,
+								shadowColor: 'rgba(0, 0, 0, 0.5)'
+							}
+						}
+					}
+				]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart_one.setOption(option_one);
+
+
+			// 基于准备好的dom，初始化echarts实例
+			var myChart_two = echarts.init(document.getElementById('main_two'),'orange');
+
+			// 指定图表的配置项和数据
+			var option_two = {
+				title : {
+					text: '某站点用户访问来源',
+					x:'center',
+					y:'bottom'
+				},
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: {
+						type: 'cross',
+						crossStyle: {
+							color: '#999'
+						}
+					}
+				},
+				legend: {
+					orient: 'vertical',
+					left: 'left',
+					data:['蒸发量','降水量','平均温度']
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+						axisPointer: {
+							type: 'shadow'
+						}
+					}
+				],
+				yAxis: [
+					{
+						type: 'value',
+						name: '水量',
+						min: 0,
+						max: 250,
+						interval: 50,
+						axisLabel: {
+							formatter: '{value} ml'
+						}
+					},
+					{
+						type: 'value',
+						name: '温度',
+						min: 0,
+						max: 25,
+						interval: 5,
+						axisLabel: {
+							formatter: '{value} °C'
+						}
+					}
+				],
+				series: [
+					{
+						name:'蒸发量',
+						type:'bar',
+						data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+					},
+					{
+						name:'降水量',
+						type:'bar',
+						data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+					},
+					{
+						name:'平均温度',
+						type:'line',
+						yAxisIndex: 1,
+						data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+					}
+				]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart_two.setOption(option_two);
+		</script>
+
+	</body>
+</html>

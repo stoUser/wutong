@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/*	项目名称：梧桐
+ *	文件名称：车辆登记欢迎页面css文件
+ *	开发时间：2017/04/14
+ * 	开发人员：398146685@qq.com
+ * 	页面样式标识符：_b
+ * */
+
+a{
+	text-decoration: none;
+}
+
+body{
+	padding: 14px;
+	box-sizing: border-box;
+	background: #f5f5f5;
+}
+
+.main_b{
+	/*background: #ffffff;*/
+}
+
+.ibox{
+	border: 1px solid #eeeeee;
+	width: auto;
+	background: #ffffff;
+	overflow-x: hidden;
+}
+
+.ibox_system{
+	border-bottom: 1px solid #eeeeee;
+	width: auto;
+	padding: 20px;
+}
+
+.system_code ul li{
+	float: left;
+}
+
+.system_code ul li:first-child{
+	margin-right: 20px;
+}
+
+.ibox_important_info{
+	width: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.ibox_important_info span{
+	font-size: 12px;
+	color: #999999;
+}
+
+.ibox_important_info h3{
+	padding: 0;
+	display: inline-block;
+	margin: 0 6px;
+}
+
+.ibox_tab{
+	font-size: 14px;
+	padding: 20px;
+	color: #999999;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.ibox_tab ul li{
+	float: left;
+	margin: 0 10px;
+}
+
+.ibox_tab ul li.active a, .ibox_tab ul li a:hover{
+	color: #fa7854;
+}
+
+.ibox_tab ul li a{
+	color: #666666;
+	text-decoration: none;
+}
+
+.ibox_tab_content{
+	padding: 20px;
+	display: none;
+}
+
+.ibox_tab_content.show{
+	display: block;
+}

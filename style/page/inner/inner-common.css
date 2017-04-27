@@ -11,3 +11,23 @@
 .bg_shallow_black{
 	background:#3e4245;
 }
+
+.f_orange{
+	color:#fa7854;
+}
+
+.f_shallow_black{
+	color:#333333;
+}
+
+.f_deep_gray{
+	color:#666666;
+}
+
+.f_shallow_gray{
+	color:#999999;
+}
+
+.main_left_b .jspDrag{
+	background: #f7b494;
+}
