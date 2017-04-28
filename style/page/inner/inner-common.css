@@ -53,7 +53,9 @@
 .width_50_p{
 	width: 50%;
 }
-
+.width_90{
+	width: 90px;
+}
 .width_200{
 	width: 200px;
 }
@@ -68,4 +70,23 @@
 }
 .width_500{
 	width: 500px;
+}
+
+
+.ibox_title{
+	background: #fafafa;
+}
+.ibox_b{
+	border: 1px solid #ddd;
+}
+.icon_ca_layui{
+	background: url(../../../img/icon/icon_ca.png) no-repeat center;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -7px;
+	z-index: 999;
+	cursor:pointer;
 }
