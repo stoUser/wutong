@@ -21,10 +21,15 @@
         	时间：2017-04-26
         	描述：系统内框架，以运输管理为例欢迎页面
         -->
-		<div class="title_map f-14">装袋错发</div>
-		<div class="main_b" style="position: relative; margin-top: 25px">
+		<div class="title_map f-14">通讯录</div>
+		<div class="main_con_b">
 			<div class="left_module">
-
+				<div class="ibox_title nowrap">
+					部门列表
+				</div>
+				<div class="ibox_content">
+					<ul id="demo"></ul>
+				</div>
 			</div>
 			<div class="right_module">
 				<a href="javascript:void(0)" class="btn btn-warning" id="btn"> 点击</a>
@@ -36,7 +41,29 @@
 		<script type="text/javascript">
 			$("#btn").click(function(){
 				$("body").toggleClass('big_page');
-			})
+			});
+
+			layui.use('tree', function(){
+				layui.tree({
+					elem: '#demo' //传入元素选择器
+					,nodes: [{ //节点
+						name: '父节点1'
+						,children: [{
+							name: '子节点11'
+						},{
+							name: '子节点12'
+						}]
+					},{
+						name: '父节点2'
+						,children: [{
+							name: '子节点21'
+							,children: [{
+								name: '子节点211'
+							}]
+						}]
+					}]
+				});
+			});
 		</script>
 	</body>
 </html>

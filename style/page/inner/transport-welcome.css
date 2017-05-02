@@ -90,14 +90,37 @@ body{
 }
 
 
+.ibox_title{
+	font-size: 14px;
+	padding: 15px;
+	color: #999999;
+	border-bottom: 1px solid #eeeeee;
+}
+
+.ibox_content{
+	padding: 10px;
+}
+
+
 /*左右布局*/
+.main_con_b{
+	position: relative;
+	margin-top: 45px;
+	height: calc(100% - 45px);
+}
+
+
 .left_module{
+	border: 1px solid #eeeeee;
 	position: absolute;
 	width: 200px;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	background: #eeeeee;
+	height: 100%;
+	background: #ffffff;
+	overflow: auto;
+	box-sizing: border-box;
 	transition: all .6s ease 0s;
 	-moz-transition: all .6s ease 0s;
 	-webkit-transition: all .6s ease 0s;
@@ -105,12 +128,14 @@ body{
 }
 
 .right_module{
+	border: 1px solid #eeeeee;
 	position: absolute;
 	width: auto;
-	left: 200px;
+	left: 220px;
 	top: 0;
 	bottom: 0;
 	right: 0;
+	box-sizing: border-box;
 	transition: all .6s ease 0s;
 	-moz-transition: all .6s ease 0s;
 	-webkit-transition: all .6s ease 0s;
