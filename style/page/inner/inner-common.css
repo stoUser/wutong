@@ -90,3 +90,6 @@
 	z-index: 999;
 	cursor:pointer;
 }
+.nowrap{
+	white-space: nowrap;
+}
