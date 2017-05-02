@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统查单页面css文件
+ *	开发时间：2017/04/19
+ * 	开发人员：344822559@qq.com
+ * 	页面样式标识符：_zm
+ * */
+
+
+/*首页导航固顶阴影*/
+.header_shadow_active{
+	box-shadow:0px 1px 15px #d2d2d2;
+	-moz-box-shadow: 0px 1px 15px #d2d2d2;
+	-webkit-box-shadow: 0px 1px 15px #d2d2d2;
+}
+
+.header_shadow_none{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	moz-box-shadow: none;
+}
+
+.check_search{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: #fafafa;
+	display: block;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	position: static;
+	z-index: 9999;
+}
+.search_list{
+	display: block;
+	clear: both;
+	padding-top: 10px;
+	padding-left: 6px;
+}
+
+/*.search_list li.active{
+	background: url(../../img/info_active.png) no-repeat left 9px;
+	background-size: 12px;
+	color: orangered;
+}*/
+.search_list .search_box{
+	padding-left: 160px;
+	min-height: 22px;
+	border-left: 1px solid #eee;
+	line-height: 18px;
+	position: relative;
+	padding-top: 8px;
+}
+.search_list .search_box i{
+	background: url(../../img/info_check.png) no-repeat 3px 12px;
+	background-size: 7px;
+	height: 30px;
+	display: block;
+	width: 30px;
+	position: absolute;
+	left: -7px;
+	top: 0px;
+}
+.search_list .search_box i.active{
+	background: url(../../img/info_active.png) no-repeat left 9px;
+	background-size: 12px;
+}
+.search_list .search_box cite{
+	font-family: "arial, helvetica, sans-serif","microsoft yahei";
+	width: 160px;
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.search_list .active{
+	color: orangered;
+}

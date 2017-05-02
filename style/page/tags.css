@@ -1,0 +1,104 @@
+/*
+ *	tags css
+ *  开发人员：张明
+ * 	作用范围：针对页面的tag是标签
+ * 	开发时间：17/05/02
+ * 	e-mail:344822559@qq.com
+ * */
+
+.Hui-tags {
+	border: solid 1px #dedede;
+	padding: 0 10px;
+	position: relative;
+}
+
+.Hui-tags-editor {
+	position: relative;
+	padding: 10px 0 10px 0px
+}
+
+.Hui-tags-icon {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: block;
+	width: 40px;
+	height: 30px;
+	padding-top: 4px;
+	font-size: 30px;
+	line-height: 40px;
+	color: #999;
+	background: no-repeat;
+	border: none;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.Hui-tags-token {
+	color: #aaa;
+	float: left;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 8px;
+	padding: 0 1px;
+	white-space: nowrap;
+	cursor: pointer
+}
+
+.Hui-tags-token:before {
+	content: "#"
+}
+
+.Hui-tags-token:hover {
+	text-decoration: line-through
+}
+
+.Hui-tags-iptwrap {
+	position: relative;
+	float: left;
+}
+
+.Hui-tags-input {
+	position: relative;
+	height: 20px;
+	min-width:120px;
+	border: 0 none;
+	vertical-align: top;
+	line-height: 20px;
+	color: #333;
+	z-index: 2;
+	display: inline-block;
+	background: none;
+}
+
+.Hui-tags-label {
+	position: absolute;
+	top: 0;
+	left: 2px;
+	right: 0px;
+	height: 20px;
+	font-size: 14px;
+	z-index: 1;
+	color: #ccc;
+	font-weight: normal;
+	display: inline-block;
+	width: 100%;
+	line-height: 20px;
+}
+
+.Hui-tags-list {
+	padding: 0 0 10px 0;
+	display: none
+}
+
+.Hui-notag {
+	font-size: 12px
+}
+
+.Hui-tags-has span {
+	cursor: pointer;
+	font-size: 12px;
+	white-space: nowrap;
+	margin-right: 10px
+}
