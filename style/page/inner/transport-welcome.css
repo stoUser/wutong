@@ -99,6 +99,8 @@ body{
 
 .ibox_content{
 	padding: 10px;
+	overflow: auto;
+	height: calc(100% - 73px);
 }
 
 
@@ -119,7 +121,7 @@ body{
 	left: 0;
 	height: 100%;
 	background: #ffffff;
-	overflow: auto;
+	overflow: hidden;
 	box-sizing: border-box;
 	transition: all .6s ease 0s;
 	-moz-transition: all .6s ease 0s;
@@ -135,11 +137,13 @@ body{
 	top: 0;
 	bottom: 0;
 	right: 0;
+	background: #ffffff;
 	box-sizing: border-box;
 	transition: all .6s ease 0s;
 	-moz-transition: all .6s ease 0s;
 	-webkit-transition: all .6s ease 0s;
 	-o-transition: all .6s ease 0s;
+	z-index: 2;
 }
 
 .big_page .right_module{
@@ -156,4 +160,8 @@ body{
 	-moz-transition: all .6s ease 0s;
 	-webkit-transition: all .6s ease 0s;
 	-o-transition: all .6s ease 0s;
+}
+
+.layui-tree li {
+	 overflow: inherit;
 }
