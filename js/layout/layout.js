@@ -9,9 +9,9 @@
 $(function(){
 	
 	/*窗口内容高度自适应*/
-	$('.main_zm').height($(window).height()-60+'px');
+	$('.main_zm').height($(window).height()-60-30+'px');
 	$(window).resize(function(){
-		$('.main_zm').height($(window).height()-60+'px');
+		$('.main_zm').height($(window).height()-60-30+'px');
 	})
 
 	/*顶部tab标签切换*/
@@ -66,5 +66,25 @@ $(function(){
 	$('.guild_zm .member_down').on('click',function(event){
 		event.stopPropagation();
 	});
+	
+	
+	$('#quite_back').on('click',function(){
+		
+		layui.use(['layer'], function(){
+			layer.confirm('确定要退出梧桐系统？', {
+				btnAlign: 'c',
+			  	btn: ['确定','取消'] //按钮
+			}, function(){
+			 layer.msg('执行退出', {icon: 1});	
+			}, function(){
+			 
+			 layer.closeAll();
+			 
+			});
+		
+		});
+	})
+	
+	
 	
 })
