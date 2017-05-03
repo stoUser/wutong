@@ -106,3 +106,13 @@ body{
 .wel_box_zm .box_content_zm .menu_box_zm a:nth-child(3n){
 	margin-right: 0px;
 }
+.copyright{
+	height: 30px;
+	text-align: center;
+	line-height: 29px;
+	color: #dc8863;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
