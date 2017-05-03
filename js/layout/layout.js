@@ -88,3 +88,44 @@ $(function(){
 	
 	
 })
+
+
+
+function openUrlInBrowser(url)
+{
+	if (typeof (dotNetBaseInstance) !== 'undefined' && dotNetBaseInstance != undefined && dotNetBaseInstance != null)
+	{
+		dotNetBaseInstance.openUrlInBrowser(url);
+		//dotNetBaseInstance.openUrlInForm(url, '下载中心', false);
+	} else
+	{
+		window.open(url);
+	}
+}
+
+function closeParentForm() {
+	if (typeof (dotNetBaseInstance) !== 'undefined' && dotNetBaseInstance != undefined && dotNetBaseInstance != null) {
+		dotNetBaseInstance.closeParentForm();
+		//dotNetBaseInstance.openUrlInForm(url, '下载中心', false);
+	} else {
+		window.close();
+	}
+}
+
+function minimizedParentForm() {
+	if (typeof (dotNetBaseInstance) !== 'undefined' && dotNetBaseInstance != undefined && dotNetBaseInstance != null) {
+		dotNetBaseInstance.minimizedParentForm();
+		//dotNetBaseInstance.openUrlInForm(url, '下载中心', false);
+	}
+}
+
+function maximizedParentForm() {
+	if (typeof (dotNetBaseInstance) !== 'undefined' && dotNetBaseInstance != undefined && dotNetBaseInstance != null) {
+		dotNetBaseInstance.maximizedParentForm();
+		//dotNetBaseInstance.openUrlInForm(url, '下载中心', false);
+	}
+}
+
+function copyData(copyText) {
+	hostLogon.setClipboardData(copyText);
+}

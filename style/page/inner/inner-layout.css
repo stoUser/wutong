@@ -323,6 +323,18 @@ body{
 	color: #ffffff;
 }
 
+#menu_b ul li .submenu .submenu_ul .submenu_li a i{
+	float: right;
+	font-size: 8px;
+	margin-top: 3px;
+	margin-right: -4px;
+	color: #dddddd;
+}
+
+#menu_b ul li .submenu .submenu_ul .submenu_li a:hover i{
+	color: #ffffff;
+}
+
 #menu_b ul li .submenu .nav_b{
 	border-left: 1px solid #eeeeee;
 	height: 100%;

@@ -21,6 +21,7 @@ body{
 	padding-right: 200px;
 	background: url(../../img/layout/header_bj.jpg) repeat-x top;
 	position: relative;
+	-webkit-app-region: drag;
 }
 #header_zm a{
 	display:block;
@@ -51,6 +52,7 @@ body{
 	border-left: 1px solid #a9491b;
 	float: left;
 	cursor: pointer;
+	-webkit-app-region: no-drag;
 }
 #header_zm .tab_box_zm ul li span{
 	float: left;
@@ -92,6 +94,7 @@ body{
 	right: 0px;
 	top: 20px;
 	background: url(../../img/layout/icon_member.png) no-repeat left center;
+	-webkit-app-region: no-drag;
 }
 #header_zm .guild_zm .memberName_zm{
 	line-height: 20px;
