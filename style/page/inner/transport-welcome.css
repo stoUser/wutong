@@ -93,14 +93,14 @@ body{
 .ibox_title{
 	font-size: 14px;
 	padding: 15px;
-	color: #999999;
+	color: #666666;
 	border-bottom: 1px solid #eeeeee;
 }
 
 .ibox_content{
 	padding: 10px;
 	overflow: auto;
-	height: calc(100% - 73px);
+	height: calc(100% - 53px);
 }
 
 
@@ -121,7 +121,6 @@ body{
 	left: 0;
 	height: 100%;
 	background: #ffffff;
-	overflow: hidden;
 	box-sizing: border-box;
 	transition: all .6s ease 0s;
 	-moz-transition: all .6s ease 0s;
@@ -137,6 +136,7 @@ body{
 	top: 0;
 	bottom: 0;
 	right: 0;
+	overflow-x: hidden;
 	background: #ffffff;
 	box-sizing: border-box;
 	transition: all .6s ease 0s;
@@ -144,6 +144,7 @@ body{
 	-webkit-transition: all .6s ease 0s;
 	-o-transition: all .6s ease 0s;
 	z-index: 2;
+	border-collapse: separate
 }
 
 .big_page .right_module{
@@ -164,4 +165,49 @@ body{
 
 .layui-tree li {
 	 overflow: inherit;
+}
+
+.display_arrow{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 198px;
+	width: 0px;
+	height: 100%;
+	z-index: 10;
+	transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-webkit-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+}
+
+.display_arrow a{
+	background: url(../../../img/icon/icon_arrow.png) no-repeat 0 0;
+	position: absolute;
+	display: block;
+	width: 17px;
+	height: 61px;
+	top: 50%;
+	margin-top: -30px;
+	outline: none;
+}
+
+.display_arrow a:hover{
+	background-position: -21px 0;
+}
+
+.display_arrow.open {
+	left: 0;
+	transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-webkit-transition: all .6s ease 0s;
+	-o-transition: all .6s ease 0s;
+}
+
+.display_arrow.open a{
+	background-position: 0 -61px;
+}
+
+.display_arrow.open a:hover{
+	background-position: -21px -61px;
 }

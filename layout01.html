@@ -13,7 +13,9 @@
 		<![endif]-->
 		<link rel="stylesheet" href="lib/font_icon/iconfont.css" />
 		<link rel="stylesheet" href="style/page/inner/inner-common.css" />
+		<link rel="stylesheet" href="lib/bootstrapTable/bootstrap.min.css" />
 		<link rel="stylesheet" href="style/page/inner/transport-welcome.css" />
+		<link rel="stylesheet" href="lib/bootstrapTable/bootstrap-table.css" />
 	</head>
 	<body style="background: #fff;">
 		<!--
@@ -30,18 +32,77 @@
 				<div class="ibox_content">
 					<ul id="demo"></ul>
 				</div>
+				<div class="display_arrow">
+					<a href="javascript:void(0)"></a>
+				</div>
 			</div>
 			<div class="right_module">
-				<a href="javascript:void(0)" class="btn btn-warning" id="btn"> 点击</a>
+				<div class="ibox_tab ibox_title">
+					<ul class="clearfix" style="margin-bottom: 0">
+						<li class="active"><a href="javascript:void(0)">总部联系表</a></li>
+						<li><a href="javascript:void(0)">中转部联系表</a></li>
+						<li><a href="javascript:void(0)">航空部联系表</a></li>
+						<li><a href="javascript:void(0)">管理片区联系表</a></li>
+					</ul>
+				</div>
+				<div class="ibox_tab_content show hui-fadeinR ibox_content clearfix" style="padding: 0">
+					<div class="mt-20" style="border-top: 1px solid #eeeeee;border-bottom: 1px solid #eeeeee;" >
+						<!--data-toggle="table" data-url="data/data.json" data-height="800"-->
+						<table id="table" data-sort-name="price"  data-sort-order="desc" data-pagination="true">
+							<thead>
+							<tr>
+								<th data-field="state" data-checkbox="true"></th>
+								<th data-field="id" data-align="right" data-width="50" data-sortable="true" data-class="dsad">ID</th>
+								<th data-field="name" data-align="center" data-width="200" data-sortable="true">Name</th>
+								<th data-field="price" data-align="center" data-width="600" data-sortable="true">Price</th>
+								<th data-field="do" data-width="1000">do</th>
+							</tr>
+							</thead>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+		<script type="text/javascript" src="lib/bootstrapTable/bootstrap-table.js" ></script>
+		<script type="text/javascript" src="lib/bootstrapTable/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="lib/bootstrapTable/bootstrap-table-export.js" ></script>
+		<script type="text/javascript" src="lib/bootstrapTable/tableExport.js" ></script>
+		<script src="lib/bootstrapTable/bootstrap-table-zh-CN.min.js"></script>
 		<script type="text/javascript" src="lib/layerui/layui.js" ></script>
+		<script type="text/javascript" src="js/page/common.js" ></script>
 		<script type="text/javascript">
-			$("#btn").click(function(){
+			var boxContHeight = $('.ibox_tab_content').height() - 23;
+
+			$(".display_arrow a").click(function(){
 				$("body").toggleClass('big_page');
+				$(".left_module > .display_arrow").toggleClass('open');
 			});
+
+
+			$('#table').bootstrapTable({
+				url: 'data/data.json',
+				striped: true,
+				height: boxContHeight,
+				showRefresh: true, //会出现刷新按钮
+				search: true,
+				clickToSelect: true,
+				pageSize: 10,
+				pageList: [5, 10, 20,25],
+				showExport: true,                     //是否显示导出
+				exportDataType: "selected",              //basic', 'all', 'selected'.
+				//searchText:"搜索",//设置默认搜索
+				searchAlign:"left",//指定搜索框水平方向的位置
+				buttonsAlign:"right",/*操作按钮在水平方向的位置*/
+				paginationHAlign:"left",/*分页条在水平方向的位置*/
+				paginationDetailHAlign:"right",/*分页详细信息在水平方向的位置*/
+				paginationPreText:"上一页",/*指定上一页的内容*/
+				paginationNextText:"下一页",
+				//RowStyle:addClass,//设置自定义行属性 参数为：row: 行数据index: 行下标 返回值可以为class或者css 支持所有自定义属性
+
+			});
+
 
 			layui.use('tree', function(){
 				layui.tree({
@@ -64,6 +125,9 @@
 					}]
 				});
 			});
+
+
+
 		</script>
 	</body>
 </html>
