@@ -71,14 +71,14 @@ $(function(){
 	$('#quite_back').on('click',function(){
 		
 		layui.use(['layer'], function(){
-			layer.confirm('确定要退出梧桐系统？', {
+			var index=layer.confirm('确定要退出梧桐系统？', {
 				btnAlign: 'c',
 			  	btn: ['确定','取消'] //按钮
 			}, function(){
 			 layer.msg('执行退出', {icon: 1});	
 			}, function(){
 			 
-			 layer.closeAll();
+			 layer.close(index);
 			 
 			});
 		
