@@ -45,13 +45,25 @@ body{
 	padding-left: 28px;
 	height: 40px;
 	border: 1px solid #f6eadb;
-	background: #fff8ef url(../../img/icon_horn.png) no-repeat 10px center;
+	overflow: hidden;
+	position: relative;
+	background: #fff8ef url(../../img/icon_horn.gif) no-repeat 10px center;
 }
+.wel_box_zm .box_content_zm .news_box_zm .news_li{
+	height: 40px;
+	position: absolute;
+	top:0
+}
+.wel_box_zm .box_content_zm .news_box_zm .news_swap{
+	height: 40px;
+	position: absolute;
+	top: 40px;
+}
+
 .wel_box_zm .box_content_zm .news_box_zm a{
 	line-height: 40px;
 	display: block;
-	height: 40px;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 .wel_box_zm .box_content_zm .news_box_zm a span{
 	display: block;

@@ -39,3 +39,22 @@ function addTopTab(url,title,tag){
 
 
 
+function b(){
+	t = parseInt(x.css('top'));
+	y.css('top','40px');
+	x.animate({top: t - 40 + 'px'},'slow');	//40为每行的高度
+	if(Math.abs(t) == h-40){ //40为每行的高度
+		y.animate({top:'0px'},'slow');
+		z=x;
+		x=y;
+		y=z;
+	}
+	setTimeout(b,4000);//滚动间隔时间 现在是6秒
+}
+$(document).ready(function(){
+	$('.news_swap').html($('.news_li').html());
+	x = $('.news_li');
+	y = $('.news_swap');
+	h = Math.ceil($('.news_li a').length/3) * 40; //40为每行的高度
+	setTimeout(b,4000);//滚动间隔时间 现在是6秒
+})
