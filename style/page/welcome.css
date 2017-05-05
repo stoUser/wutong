@@ -33,15 +33,15 @@ body{
 }
 .wel_box_zm .box_content_zm{
 	height: 500px;
-	width: 940px;
+	width: 1020px;
 	position: absolute;
 	margin-top: -250px;
 	top: 50%;
 	left: 50%;
-	margin-left: -450px;
+	margin-left: -510px;
 }
 .wel_box_zm .box_content_zm .news_box_zm{
-	width: 910px;
+	width: 990px;
 	padding-left: 28px;
 	height: 40px;
 	border: 1px solid #f6eadb;
@@ -88,7 +88,7 @@ body{
 }
 .wel_box_zm .box_content_zm .menu_box_zm a{
 	margin: 20px 20px 0px 0px;
-	width: 300px;
+	width: 240px;
 	height: 175px;
 	display: block;
 	float: left;
@@ -115,7 +115,7 @@ body{
 	text-align: center;
 }
 
-.wel_box_zm .box_content_zm .menu_box_zm a:nth-child(3n){
+.wel_box_zm .box_content_zm .menu_box_zm a:nth-child(4n){
 	margin-right: 0px;
 }
 .copyright{
