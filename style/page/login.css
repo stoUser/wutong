@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*	项目名称：梧桐
+ *	文件名称：梧桐系统登录css文件
+ *	开发时间：2017/05/04
+ * 	开发人员：398146685@qq.com
+ * 	页面样式标识符：_b
+ * */
+.login_main_b{
+	height: 480px;
+	width: 850px;
+	font-size: 14px;
+	background: #ffffff;
+}
+.login_main_b .login_left{
+	height: 480px;
+	width: 410px;
+	position: relative;
+	background: url(../../img/bg_login_left.jpg) no-repeat left top;
+}
+.login_main_b .login_left .login_tips{
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.login_main_b .login_left .login_tips a{
+	color: #999999;
+	display: block;
+	text-decoration: none;
+}
+
+.login_main_b .login_left .login_tips a:hover{
+	color: #ff784e;
+}
+.login_main_b .login_left .login_tips .tips_down{
+	width: 150px;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #bbbbbb;
+	position: absolute;
+	top: 40px;
+	right: -26px;
+	z-index: 99;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.login_main_b .login_left .login_tips .tips_down .triangle-up{
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid white;
+	position: absolute;
+	right: 34px;
+	top: -8px;
+}
+
+.login_main_b .login_left .login_tips .tips_down ul li{
+	display: block;
+	line-height: 40px;
+	border-top: 1px solid #eeeeee;
+}
+
+.login_main_b .login_left .login_tips .tips_down ul :first-child{
+	border-top: none;
+}
+
+.login_main_b .login_left .login_tips .tips_down ul li a img{
+	margin-top: -4px;
+}
+
+
+.version_number{
+	position: absolute;
+	bottom: 16px;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	color: #fff5ef;
+}
+
+.login_right{
+	width: 440px;
+	height: 480px;
+	padding: 45px;
+	box-sizing: border-box;
+	background: #ffffff;
+}
+
+.login_right .login_form .layui-input, .login_right .login_form .layui-btn{
+	font-size: 14px;
+	height: 46px;
+	line-height: 46px;
+}
+
+.login_right .login_form .layui-input.form_danger{
+	background: #faffc3;
+}
+
+
+.login_right .login_form .forget_psw{
+	color: #ff784e;
+}
