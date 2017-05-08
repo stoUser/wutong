@@ -10,6 +10,8 @@
 	width: 850px;
 	font-size: 14px;
 	background: #ffffff;
+	overflow-x: hidden;
+	-webkit-app-region: drag;
 }
 .login_main_b .login_left{
 	height: 480px;
@@ -23,6 +25,7 @@
 	position: absolute;
 	right: 10px;
 	top: 10px;
+	-webkit-app-region: no-drag;
 }
 .login_main_b .login_left .login_tips a{
 	color: #999999;
@@ -76,6 +79,7 @@
 	width: 100%;
 	font-size: 14px;
 	color: #fff5ef;
+	-webkit-app-region: no-drag;
 }
 .login_right{
 	width: 440px;
@@ -83,6 +87,10 @@
 	padding: 45px;
 	box-sizing: border-box;
 	background: #ffffff;
+	position: relative;
+}
+.login_right .login_form{
+	-webkit-app-region: no-drag;
 }
 .login_right .login_form .layui-input, .login_right .login_form .layui-btn{
 	font-size: 14px;
@@ -97,4 +105,28 @@
 }
 .login_right .login_form .forget_psw{
 	color: #ff784e;
+}
+a.login_close{
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	text-decoration: none;
+	-webkit-app-region: no-drag;
+}
+a.login_close i{
+	font-size: 18px;
+	color: #999999;
+}
+
+a:hover.login_close i{
+	color: #ff784e;
+}
+form .Huialert{
+	display: none;
+}
+
+form .Huialert.show{
+	display: block;
 }
