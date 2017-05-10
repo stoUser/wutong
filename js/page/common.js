@@ -7,5 +7,18 @@
 $(function(){
 	$('.layui-form > .layui-form-item > .layui-input-block,.layui-inline > .layui-input-inline').find('i.icon_ca_layui').on('click',function(){
 		$(this).siblings('input').val('');
-	});	
+	});
+	// Collapse ibox function
+	$('.collapse-link').click( function() {
+		var ibox = $(this).closest('div.main_b');
+		var button = $(this).find('i');
+		var content = ibox.find('div.ibox_tab_content');
+		content.slideToggle(200);
+		button.toggleClass('icon-sanjiao').toggleClass('icon-tripple-up');
+/*		ibox.toggleClass('').toggleClass('border-bottom');*/
+/*		setTimeout(function () {
+			ibox.resize();
+			ibox.find('[id^=map-]').resize();
+		}, 50);*/
+	});
 })

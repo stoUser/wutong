@@ -318,7 +318,7 @@ body{
 	margin-bottom: 4px;
 }
 
-#menu_b ul li .submenu .submenu_ul .submenu_li a:hover{
+#menu_b ul li .submenu .submenu_ul .submenu_li.active a{
 	background: #f88954;
 	color: #ffffff;
 }
@@ -331,7 +331,7 @@ body{
 	color: #dddddd;
 }
 
-#menu_b ul li .submenu .submenu_ul .submenu_li a:hover i{
+#menu_b ul li .submenu .submenu_ul .submenu_li.active a i{
 	color: #ffffff;
 }
 

@@ -46,7 +46,7 @@
 					</ul>
 				</div>
 				<div class="ibox_tab_content show hui-fadeinR ibox_content clearfix" style="padding: 0">
-					<div class="mt-20" style="border-top: 1px solid #eeeeee;border-bottom: 1px solid #eeeeee;" >
+					<div style="border-top: 1px solid #eeeeee;border-bottom: 1px solid #eeeeee;" >
 						<!--data-toggle="table" data-url="data/data.json" data-height="800"-->
 						<table id="table" data-sort-name="price"  data-sort-order="desc" data-pagination="true">
 							<thead>
@@ -73,18 +73,26 @@
 		<script type="text/javascript" src="lib/layerui/layui.js" ></script>
 		<script type="text/javascript" src="js/page/common.js" ></script>
 		<script type="text/javascript">
-			var boxContHeight = $('.ibox_tab_content').height() - 23;
+			/*var boxContHeight = $('.ibox_tab_content').height() - 2;*/
 
+			function tableHeight() {
+				return $('.ibox_tab_content').height() - 2;
+			}
+
+			//根据窗口调整表格高度
+			$(window).resize(function() {
+				$('#table').bootstrapTable('resetView', {
+					height: tableHeight() -37
+				})
+			})
 			$(".display_arrow a").click(function(){
 				$("body").toggleClass('big_page');
 				$(".left_module > .display_arrow").toggleClass('open');
 			});
-
-
 			$('#table').bootstrapTable({
 				url: 'data/data.json',
 				striped: true,
-				height: boxContHeight,
+				height: tableHeight(),
 				showRefresh: true, //会出现刷新按钮
 				search: true,
 				clickToSelect: true,
@@ -102,8 +110,6 @@
 				//RowStyle:addClass,//设置自定义行属性 参数为：row: 行数据index: 行下标 返回值可以为class或者css 支持所有自定义属性
 
 			});
-
-
 			layui.use('tree', function(){
 				layui.tree({
 					elem: '#demo' //传入元素选择器
@@ -125,9 +131,6 @@
 					}]
 				});
 			});
-
-
-
 		</script>
 	</body>
 </html>

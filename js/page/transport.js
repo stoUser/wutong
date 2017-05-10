@@ -13,7 +13,9 @@ $(function(){
 		$('.page_content').height($(window).height()-47+'px');
 	});
 
-	/*菜单栏内容溢出时候 出滚动条*/
+	/*有TAG标签让加向右箭头*/
+	addTurnRight();
+
 	var bars = '.jspHorizontalBar, .jspVerticalBar';
 	$('.main_left_b').bind('jsp-initialised', function (event, isScrollable) {
 		//hide the scroll bar on first load
@@ -29,6 +31,8 @@ $(function(){
 	);
 
 
+
+
 	/*子菜单显示*/
 	$('body').on('click', '#menu_b ul li',function(){
 		$(this).addClass('active').siblings().removeClass('active');
@@ -39,10 +43,20 @@ $(function(){
 		$(this).parents("li").removeClass('active');
 		event.stopPropagation();
 	});
+	/*移开区域关闭子菜单显示*/
+	$('body').on('mouseleave', '#menu_b',function(){
+		$(this).find("li").removeClass('active');
+		subMenuHide();
+	});
 
-	/*禁止点击子菜单时间冒泡*/
+	/*禁止点击子菜单事件冒泡*/
 	$('body').on('click', '#menu_b .submenu a',function(event){
 		event.stopPropagation();
+	});
+
+	//二级菜单添加样式
+	$('body').on('mouseenter', '#menu_b ul li .submenu .submenu_ul .submenu_li a',function(event){
+		$(this).parent().addClass('active').siblings().removeClass('active');
 	});
 
 	/*鼠标移入当有2级菜单，如果有三级菜单，打开三级菜单*/
@@ -53,6 +67,7 @@ $(function(){
 
 	/*常用工具打开、缩回*/
 	$('.toolbar_b .toolbar_down').click(function(){
+		$(this).find('i').toggleClass('icon-sanjiao').toggleClass('icon-tripple-up');
 		$('.toolbar_b .toolbar_list').slideToggle(200);
 	});
 
@@ -91,6 +106,14 @@ $(function(){
 	$(".roll_left").on("click", i);
 	$(".roll_right").on("click", a);
 });
+
+
+function addTurnRight(){
+	var obj = '<i class='+'"iconfont icon-fanhui-copy-copy"'+'></i>';
+	$("#menu_b ul li .submenu .submenu_ul .submenu_li a[tag]").append(obj);
+}
+
+
 function addTabBar(url,title,tag){
 
 	/*收回子菜单*/
@@ -125,6 +148,7 @@ function addTabBar(url,title,tag){
 
 function subMenuHide(){
 	$('#menu_b ul li').removeClass('active');
+	$('#menu_b .submenu_wrapper .submenu_li').removeClass('active')
 }
 
 function t(t) {
@@ -139,7 +163,6 @@ function a() {
 		a = t($(".page_tabs_b").children().not(".page_tabs_b")),
 		i = $(".page_tabs_b").outerWidth(!0) - a,
 		n = 0;
-	/*if ($(".page_tabs_content").width() < i) return !1;*/
 	if ($(".page_tabs_content").width() < i) {
 		$(".page_tabs_content").animate({
 			marginLeft: 0  + "px"

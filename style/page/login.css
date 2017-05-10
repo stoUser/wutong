@@ -100,6 +100,21 @@
 .login_right .login_form .outline_login span{
 	padding-right: 0;
 }
+.login_right .login_form .input_site{
+	padding-left: 60px;
+	background: url("../../img/icon_login_site.png") no-repeat 16px 9px;
+}
+.login_right .login_form .input_user{
+	padding-left: 60px;
+	background: url("../../img/icon_login_user.png") no-repeat 16px 9px;
+}
+.login_right .login_form .input_psw{
+	padding-left: 60px;
+	background: url("../../img/icon_login_psw.png") no-repeat 16px 9px;
+}
+.login_right .login_form .bg_btn_orange{
+	font-size: 16px;
+}
 .login_right .login_form .layui-input.form_danger{
 	background: #faffc3;
 }

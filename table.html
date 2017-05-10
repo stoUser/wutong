@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="style/page/inner/transport-welcome.css" />
 		<link rel="stylesheet" href="lib/bootstrapTable/bootstrap-table.css" />
 	</head>
-	<body style="background: #fff;">
+	<body style="background: #fff;overflow-x: hidden">
 		<!--
         	作者：398146685@qq.com
         	时间：2017-04-26
@@ -33,11 +33,18 @@
 				<button class="layui-btn layui-btn-primary layui-btn-small"><i class="iconfont icon-chaxun"></i> 操作</button>
 			</div>	
         </div>
-		<div class="main_b" style="padding-top: 25px;">
+		<div class="main_b hui-fadeinR" style="padding-top: 25px;overflow-x: hidden">
 			<div class="clearfix mb-20"></div>
-			<div class="pt-10 pb-10 pl-20 ibox_title ibox_b f-14 hui-fadeinR" style="border-bottom: none;">检索条件</div>
-			<div class="ibox_tab_content show hui-fadeinR mb-20 ibox_b" style="padding-bottom: 0px;">
-				<div class="layui-form-item layui-form-pane">
+			<div class="pt-10 pb-10 pl-20 ibox_title ibox_b f-14" style="border-bottom: none;">
+				<span>条件查询</span>
+				<div class="ibox_tools">
+					<a class="collapse-link" href="javascript:void(0)">
+						<i class="iconfont icon-sanjiao"></i>
+					</a>
+				</div>
+			</div>
+			<div class="ibox_tab_content mb-10 ibox_b" style="padding-bottom: 0px; display: block">
+				<div class="layui-form-item layui-form-pane" style="margin-bottom: 2px">
 				<div class="layui-inline">
 			      <label class="layui-form-label width_90 f-12">日期选择</label>
 			      <div class="layui-input-inline pos-r">
@@ -86,7 +93,6 @@
 			</div>
 			
 			<div style="border:1px solid #ddd">
-				<!--data-toggle="table" data-url="data/data.json" data-height="800"-->
 				<table id="table" data-sort-name="price"  data-sort-order="desc" data-pagination="true">
 				    <thead>
 				        <tr>

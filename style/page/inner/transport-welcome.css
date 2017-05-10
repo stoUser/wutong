@@ -61,9 +61,25 @@ body{
 
 .ibox_tab{
 	font-size: 14px;
-	padding: 15px;
+	padding: 10px 15px;
 	color: #999999;
 	border-bottom: 1px solid #eeeeee;
+}
+.ibox_tools{
+	display: inline-block;
+	float: right;
+	margin-top: 0;
+	position: relative;
+	padding: 0;
+}
+.ibox_tools a{
+	cursor: pointer;
+	margin-left: 5px;
+	color: #999999;
+	text-decoration: none;
+}
+.ibox_tools a i{
+	font-size: 18px;
 }
 
 .ibox_tab ul li{
@@ -81,7 +97,7 @@ body{
 }
 
 .ibox_tab_content{
-	padding: 20px;
+	padding: 10px;
 	display: none;
 }
 
@@ -92,7 +108,7 @@ body{
 
 .ibox_title{
 	font-size: 14px;
-	padding: 15px;
+	padding: 10px 15px;
 	color: #666666;
 	border-bottom: 1px solid #eeeeee;
 }
@@ -100,7 +116,7 @@ body{
 .ibox_content{
 	padding: 10px;
 	overflow: auto;
-	height: calc(100% - 53px);
+	height: calc(100% - 43px);
 }
 
 
