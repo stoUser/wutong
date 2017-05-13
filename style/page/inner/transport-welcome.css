@@ -12,7 +12,7 @@ a{
 }
 
 body{
-	padding: 14px;
+	padding: 10px;
 	box-sizing: border-box;
 	background: #f5f5f5;
 }
@@ -61,7 +61,7 @@ body{
 
 .ibox_tab{
 	font-size: 14px;
-	padding: 10px 15px;
+	padding: 6px 15px 7px;
 	color: #999999;
 	border-bottom: 1px solid #eeeeee;
 }
@@ -108,7 +108,7 @@ body{
 
 .ibox_title{
 	font-size: 14px;
-	padding: 10px 15px;
+	padding: 6px 15px 7px;
 	color: #666666;
 	border-bottom: 1px solid #eeeeee;
 }
@@ -116,15 +116,15 @@ body{
 .ibox_content{
 	padding: 10px;
 	overflow: auto;
-	height: calc(100% - 43px);
+	height: calc(100% - 36px);
 }
 
 
 /*左右布局*/
 .main_con_b{
 	position: relative;
-	margin-top: 45px;
-	height: calc(100% - 45px);
+	margin-top: 40px;
+	height: calc(100% - 40px);
 }
 
 

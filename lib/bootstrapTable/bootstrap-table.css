@@ -148,8 +148,8 @@
 
 .fixed-table-pagination div.pagination,
 .fixed-table-pagination .pagination-detail {
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 3px;
+    margin-bottom: 2px;
     padding: 0px 10px;
 }
 .fixed-table-pagination{
@@ -204,9 +204,20 @@
 .fixed-table-toolbar .search,
 .fixed-table-toolbar .columns {
     position: relative;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    line-height: 34px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    line-height: 32px;
+}
+
+.fixed-table-toolbar .bs-bars .btn,
+.fixed-table-toolbar .search .btn,
+.fixed-table-toolbar .columns .btn {
+    font-size: 12px;
+    color: #666;
+}
+
+.fixed-table-toolbar .search{
+    width: 300px;
 }
 
 .fixed-table-pagination li.disabled a {
